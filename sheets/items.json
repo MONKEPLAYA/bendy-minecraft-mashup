@@ -1,0 +1,6 @@
+[
+  { "id": "item:pickaxe", "name": "Rusty Pickaxe", "stack": 1, "tool": "pick", "durability": 50 },
+  { "id": "item:shovel", "name": "Bent Shovel", "stack": 1, "tool": "shovel", "durability": 60 },
+  { "id": "item:axe", "name": "Ink Axe", "stack": 1, "tool": "axe", "durability": 60 },
+  { "id": "item:crafting_table", "name": "Crafting Table", "stack": 1 }
+]

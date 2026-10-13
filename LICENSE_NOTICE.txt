@@ -1,0 +1,1 @@
+This project is licensed MIT (code) and CC-BY-SA (data/content). See LICENSE and README for details.

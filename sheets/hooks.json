@@ -1,0 +1,11 @@
+{
+  "hooks": {
+    "on_game_start": "BendyGame.OnGameStart",
+    "on_update": "BendyGame.Update",
+    "on_interact": "BendyGame.OnInteract",
+    "config_keys": {
+      "minecraft_path_env": "MINECRAFT_PATH",
+      "melty_game_token": "{game:minecraft-java}"
+    }
+  }
+}

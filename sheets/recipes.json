@@ -1,0 +1,5 @@
+[
+  { "id": "recipe:plank_from_wood", "inputs": [{"item":"item:wood_plank","count":1}], "output": {"item":"item:crafting_table","count":1}, "unlock": "chapter1" },
+  { "id": "recipe:pickaxe_rusty", "inputs": [{"item":"item:wood_plank","count":3},{"item":"item:stone_chunk","count":2}], "output": {"item":"item:pickaxe","count":1}, "unlock": "chapter1" },
+  { "id": "recipe:ink_bucket", "inputs": [{"item":"item:ink_sac","count":2}], "output": {"item":"item:ink_bucket","count":1}, "unlock": "chapter2" }
+]

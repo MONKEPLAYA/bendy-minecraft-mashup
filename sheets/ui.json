@@ -1,0 +1,9 @@
+{
+  "ui": {
+    "hotbar_slots": 9,
+    "inventory_rows": 4,
+    "key_open_inventory": "I",
+    "key_place": "Mouse0",
+    "key_mine": "Mouse1"
+  }
+}

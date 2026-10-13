@@ -1,0 +1,20 @@
+{
+  "name": "bendy-minecraft-mashup",
+  "version": "0.1.0",
+  "games": {
+    "host": "pc-bendy-and-the-ink-machine",
+    "companions": ["minecraft-java"]
+  },
+  "launch": {
+    "kind": "game",
+    "exe": "{game}/Bendy.exe"
+  },
+  "description": "Bendy-hosted mashup that adds Minecraft-like inventory, crafting and placement using assets from the player's Minecraft install.",
+  "files": [
+    { "path": "build/bendy-minecraft-mashup-{{version}}.zip", "required": true }
+  ],
+  "recipe": {
+    "one_click_check": true,
+    "notes": "This mashup reads the companion game from {game:minecraft-java} at runtime; do not copy any Minecraft files into this repo or release."
+  }
+}

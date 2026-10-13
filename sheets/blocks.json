@@ -1,0 +1,7 @@
+[
+  { "id": "block:dirt", "name": "Dirt (Ink-stained)", "placeable": true, "mining_time": 1.0, "texture": "minecraft:block/dirt.png", "drop": "item:dirt_chunk" },
+  { "id": "block:stone", "name": "Stone (smudged)", "placeable": true, "mining_time": 2.0, "texture": "minecraft:block/stone.png", "drop": "item:stone_chunk" },
+  { "id": "block:wood", "name": "Plank (inked)", "placeable": true, "mining_time": 1.5, "texture": "minecraft:block/oak_planks.png", "drop": "item:wood_plank" },
+  { "id": "block:ink_block", "name": "Ink Block", "placeable": true, "mining_time": 3.0, "texture": "minecraft:block/ink_block.png", "drop": "item:ink_bucket" },
+  { "id": "block:glow", "name": "Bulb (glow)", "placeable": true, "mining_time": 0.5, "texture": "minecraft:block/glowstone.png", "drop": "item:glow_shard" }
+]

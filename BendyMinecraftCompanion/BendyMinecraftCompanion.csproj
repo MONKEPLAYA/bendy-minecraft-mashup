@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>BendyMinecraftCompanion</RootNamespace>
+    <AssemblyName>BendyMinecraftCompanion</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\src\BendyMinecraftCompanion.cs" Link="BendyMinecraftCompanion.cs" />
+    <Compile Include="..\src\InventorySystem.cs" Link="InventorySystem.cs" />
+    <Compile Include="..\src\MiningSystem.cs" Link="MiningSystem.cs" />
+    <Compile Include="..\src\PlacementSystem.cs" Link="PlacementSystem.cs" />
+    <Compile Include="..\src\ResourceProvider.cs" Link="ResourceProvider.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Bendy and the Ink Machine\BepInEx\core\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>libs\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>libs\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>libs\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>libs\Assembly-CSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="CopyToPluginFolder" AfterTargets="Build">
+    <PropertyGroup>
+      <GameRoot>C:\Program Files (x86)\Steam\steamapps\common\Bendy and the Ink Machine</GameRoot>
+      <PluginDir>$(GameRoot)\BepInEx\plugins</PluginDir>
+      <OutputDll>$(TargetDir)BendyMinecraftCompanion.dll</OutputDll>
+    </PropertyGroup>
+    <Message Importance="high" Text="Copying built plugin to $(PluginDir)" />
+    <Copy SourceFiles="$(OutputDll)" DestinationFolder="$(PluginDir)" SkipUnchangedFiles="true" />
+  </Target>
+</Project>
